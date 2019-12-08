@@ -1,8 +1,9 @@
-package com.gbs.mall.user.service;
+package com.gbs.mall.service;
 
 
-import com.gbs.mall.user.bean.UmsMember;
-import com.gbs.mall.user.bean.UmsMemberReceiveAddress;
+
+import com.gbs.mall.bean.UmsMember;
+import com.gbs.mall.bean.UmsMemberReceiveAddress;
 
 import java.util.List;
 

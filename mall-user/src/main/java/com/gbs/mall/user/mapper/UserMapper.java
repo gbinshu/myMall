@@ -1,7 +1,7 @@
 package com.gbs.mall.user.mapper;
 
 
-import com.gbs.mall.user.bean.UmsMember;
+import com.gbs.mall.bean.UmsMember;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;

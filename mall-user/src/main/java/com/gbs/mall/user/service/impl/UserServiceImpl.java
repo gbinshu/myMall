@@ -1,11 +1,14 @@
 package com.gbs.mall.user.service.impl;
 
 
-import com.gbs.mall.user.bean.UmsMember;
-import com.gbs.mall.user.bean.UmsMemberReceiveAddress;
+
+
+
+import com.gbs.mall.bean.UmsMember;
+import com.gbs.mall.bean.UmsMemberReceiveAddress;
+import com.gbs.mall.service.UserService;
 import com.gbs.mall.user.mapper.UmsMemberReceiveAddressMapper;
 import com.gbs.mall.user.mapper.UserMapper;
-import com.gbs.mall.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
