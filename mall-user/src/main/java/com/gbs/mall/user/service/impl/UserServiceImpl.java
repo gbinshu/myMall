@@ -29,10 +29,16 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(String memberId) {
 
-        /*根据umsMemberReceiveAddresses中不为空的的键进行查询*/
+        /*//根据umsMemberReceiveAddresses中不为空的的键进行查询
         UmsMemberReceiveAddress umsMemberReceiveAddress = new UmsMemberReceiveAddress();
         umsMemberReceiveAddress.setMemberId(memberId);
-        List<UmsMemberReceiveAddress> umsMemberReceiveAddresses = umsMemberReceiveAddressMapper.select(umsMemberReceiveAddress);
+        List<UmsMemberReceiveAddress> umsMemberReceiveAddresses = umsMemberReceiveAddressMapper.select(umsMemberReceiveAddress);*/
+
+        //使用example中不为空的的键进行查询
+        Example example = new Example(UmsMemberReceiveAddress.class);
+        example.createCriteria().andEqualTo("memberId",memberId);
+        List<UmsMemberReceiveAddress> umsMemberReceiveAddresses = umsMemberReceiveAddressMapper.selectByExample(example);
+
         return umsMemberReceiveAddresses;
     }
 
