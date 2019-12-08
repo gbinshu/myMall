@@ -1,1 +1,2 @@
 # myMall
+创建myMall并测试myMall和数据库的连接
