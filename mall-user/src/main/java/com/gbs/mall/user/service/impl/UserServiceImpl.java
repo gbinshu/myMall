@@ -16,7 +16,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<UmsMember> getAllUser() {
-        List<UmsMember> umsMembers = userMapper.selectAllUser();
+//        List<UmsMember> umsMembers = userMapper.selectAllUser();//不使用通用mapper
+        List<UmsMember> umsMembers = userMapper.selectAll();//使用通用mapper
         return umsMembers;
     }
 
