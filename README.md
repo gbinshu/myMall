@@ -7,3 +7,4 @@
     - 配置mapper对应bean的主键返回策略id和generatedValue；
     - 配置启动类扫描器tk.mapper的MapperScan。
 
+3.根据外键进行查询
