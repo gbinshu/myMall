@@ -1,6 +1,6 @@
 # myMall
 1.创建myMall并测试myMall和数据库的连接
-
+# mall-user用户服务8080
 2.使用通用mapper。
     - 配置pom依赖；
     - 配置mapper继承tk.mybatis的mapper；
@@ -22,3 +22,6 @@
     Controller=parent+api+webUtil（包含commonUtil）；
     Service=parent+api+serviceUtil（包含commonUtil）。
 
+8.linux下dubbo配置，将user项目拆分为user-service和user-web。引入dubbo框架到commonUtil中（web和service层均需要使用dubbo进行通讯）和dubbo的配置。
+    - mall-user-service用户服务的service层8070
+    - mall-user-web用户服务的web层8080
